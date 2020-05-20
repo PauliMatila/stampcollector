@@ -1,0 +1,15 @@
+h1 {
+  background-color: red;
+  text-align: center;
+  padding: 20px;
+}
+
+p {
+  background-color: lightseagreen;
+  text-align: center;
+  padding: 15px;
+}
+
+.StampContainerHeader {
+  background-color: red;
+}
