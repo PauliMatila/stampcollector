@@ -1,15 +1,31 @@
-h1 {
-  background-color: red;
-  text-align: center;
-  padding: 20px;
-}
-
-p {
-  background-color: lightseagreen;
+.mainWindow {
+  background-image: radial-gradient(var(--pääväri3), var(--pääväri2));
+  border-radius: 10px;
   text-align: center;
   padding: 15px;
 }
 
-.StampContainerHeader {
-  background-color: red;
+.containerStyle {
+  background-image: radial-gradient(var(--pääväri1), var(--pääväri2));
+  border: 1px solid rgb(59, 59, 59);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.stampContainerHeader {
+  background-color: green;
+  border: 2px solid purple;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.containerImage img {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --pääväri1: rgb(78, 207, 203);
+  --pääväri2: rgb(26, 110, 116);
+  --pääväri3: rgb(0, 255, 179);
 }

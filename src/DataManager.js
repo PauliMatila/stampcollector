@@ -1,22 +1,28 @@
-import Stamp from './Stamp'
+import Stamp from './Stamps/Stamp'
 
-export var stampCollection = []
+var stampCollection = []
 
 let initDataManager = () => {
   var stamp1 = new Stamp(
     'Lp type 2-3-1',
+    3.50,
+    'USSR',
     1979,
     true,
     'https://upload.wikimedia.org/wikipedia/commons/8/82/Steam_Locomotive_Lp_type_2-3-1_on_1979_USSR_Stamp.jpg'
   );
   var stamp2 = new Stamp(
-    'Burkina Faso',
-    1985,
+    'VL-60k',
+    7.30,
+    'USSR',
+    1966,
     true,
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT6-njrMvMcUWWCkzVA2V0bsSope_n0tUfyw6qdIOYFkDKTvNe7&usqp=CAU'
+    'https://comps.canstockphoto.com/post-stamp-with-russian-electric-picture_csp7622851.jpg'
   );
   var stamp3 = new Stamp(
-    'Dampflokomotive "Pioneer"',
+    'Achsfolge 2-2-2',
+    6.20,
+    'Hungary',
     1979,
     true,
     'https://i.pinimg.com/236x/7a/f3/5d/7af35d0f123d8e1ea7e0558d63ec481b--north-western-busses.jpg'
@@ -24,4 +30,4 @@ let initDataManager = () => {
   stampCollection.push(stamp1, stamp2, stamp3);
 }
 
-export default initDataManager
+export default {initDataManager, stampCollection}
